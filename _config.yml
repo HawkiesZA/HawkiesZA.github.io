@@ -1,16 +1,16 @@
 # Site settings
 title: Gerrit Vermeulen
-email: ""
+email: "gerrit@dancingphotographer.co.za"
 description: "Photo Journal"
 url: "http://HawkiesZA.github.io"
 baseurl: "/HawkiesZA.github.io"
 facebook_username: 
-twitter_username: "hawkiesza"
-instagram_username: ""
-github_username:  "HawkiesZA"
+twitter_username: "dancingphotogza"
+instagram_username: "dancingphotogza"
+github_username: 
 deviantart_username: 
 flickr_username: 
-discus_shortname: ""
+discus_shortname:
 share: true
 
 # Owner/author information
