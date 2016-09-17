@@ -7,6 +7,8 @@ This site uses [jekyll](https://jekyllrb.com/) with the [Photorama](https://gith
 
 ##License
 
+Unless otherwise noted, all photos are copyright Gerrit Vermeulen. If you would like to use them, please contact me (contact details can be found on the site).
+
 The MIT License (MIT)
 
 Copyright (c) 2014 Filippo Oretti, Dario Andrei
