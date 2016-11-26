@@ -11,7 +11,7 @@ tags: []
 categories: [dance]
 comments: false
 ---
-I got my first camera when I was a little kid. 
+I got my first camera when I was a little kid.
 
 If memory serves, it was a Christmas or birthday gift - a little film point and shoot. I took it with me on family vacations and school outings. I took photos around the house.
 
