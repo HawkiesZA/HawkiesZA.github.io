@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Kyiv International Summer Festival 2017"
+description: "The Kyiv International Summer Festival"
+active: gallery
+header-img: "img/gallery-social-bg-8.jpg"
+album-title: ""
+images:
+ - image_path: /gallery/archive/kisf-2017/IMG_5725.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_5753.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_5792.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_5970.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6166.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6214.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6221.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6237.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6256.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6655.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6814.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6826.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6832.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6835.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_6951.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7005.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7012.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7020.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7058.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7275.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7372.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7434.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7451.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7471.jpg
+   copyright: © G.R. Vermeulen
+ - image_path: /gallery/archive/kisf-2017/IMG_7487.jpg
+   copyright: © G.R. Vermeulen
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+
+{% for image in page.images %}
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+					</header>
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary" id="{{ image.caption }}">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+         type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+image: {
+      titleSrc: function(item) {
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+
+</body></html>
